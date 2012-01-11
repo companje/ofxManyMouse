@@ -9,7 +9,7 @@ Instructions:
 2. #include "ofxManyMouse.h" in testApp.h
 
 3. let testApp extend ofxManyMouse like this: 
-       class testApp : public ofBaseApp, public ofxManyMouse
+       class testApp : public ofBaseApp, public ofxManyMouse { 
 
 4. Add one or more of the following functions to testApp.h
        void mouseMoved(int device, int axis, int value);
