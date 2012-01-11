@@ -1,1 +1,26 @@
-openFrameworks addon for manymouse, a great library to work with multiple mice or trackballs
+openFrameworks wrapper addon for Ryan C. Gordon's manymouse library.
+
+Instructions:
+
+1. Add the ofxManyMouse to your project
+
+2. #include "ofxManyMouse.h" in testApp.h
+
+3. let testApp extend ofxManyMouse like this: 
+       class testApp : public ofBaseApp, public ofxManyMouse
+
+4. Add one or more of the following functions to testApp.h
+       void mouseMoved(int device, int axis, int value);
+       void mouseScroll(int device, int axis, int value);
+       void mousePressed(int device, int button);
+       void mouseReleased(int device, int button);
+       void mouseDisconnect(int device);
+
+5. Implement the function(s) in testApp.cpp
+       void testApp::mouseMoved(int device, int axis, int value) {
+          //do something with the values
+       }
+
+Good luck!
+
+
