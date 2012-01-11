@@ -26,6 +26,6 @@ public:
 	
 	void update(ofEventArgs &e);
 	void listDevices();
-    string getDeviceName(int index);
+	string getDeviceName(int index);
 	int mouseCount;
 };
