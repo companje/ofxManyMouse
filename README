@@ -1,5 +1,7 @@
 openFrameworks wrapper addon for Ryan C. Gordon's manymouse library.
 
+With this addon you can easily read values from multiple mouse or trackball devices.
+
 Instructions:
 
 1. Add the ofxManyMouse to your project
