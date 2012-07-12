@@ -12,7 +12,7 @@
 ofxManyMouse::ofxManyMouse() {    
 	mouseCount = ManyMouse_Init();
     
-	ofAddListener(ofEvents.update, this, &ofxManyMouse::update);
+	ofAddListener(ofEvents().update, this, &ofxManyMouse::update);
 }
 
 string ofxManyMouse::getDeviceName(int index) {
