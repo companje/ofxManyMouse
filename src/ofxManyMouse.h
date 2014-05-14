@@ -21,6 +21,7 @@ public:
 	virtual void mousePressed(int device, int button) {};
 	virtual void mouseReleased(int device, int button) {};
 	virtual void mouseMoved(int device, int axis, int delta) {};
+  virtual void mouseMovedAbsolute(int device, int axis, int pos) {};
 	virtual void mouseScroll(int device, int axis, int delta) {};
 	virtual void mouseDisconnected(int device);
 	

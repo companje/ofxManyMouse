@@ -13,6 +13,7 @@ Instructions:
 
 4. Add one or more of the following functions to testApp.h
        void mouseMoved(int device, int axis, int value);
+       void mouseMovedAbsolute(int device, int axis, int pos); //new and not tested yet
        void mouseScroll(int device, int axis, int value);
        void mousePressed(int device, int button);
        void mouseReleased(int device, int button);

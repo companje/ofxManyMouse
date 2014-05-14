@@ -32,14 +32,14 @@ void ofxManyMouse::update(ofEventArgs &e) {
 		
 		switch (m.type) {
 			case MANYMOUSE_EVENT_RELMOTION: mouseMoved(m.device, m.item, m.value); break;
-            case MANYMOUSE_EVENT_SCROLL: mouseScroll(m.device, m.item, m.value); break;
-			case MANYMOUSE_EVENT_BUTTON: 
+      case MANYMOUSE_EVENT_SCROLL: mouseScroll(m.device, m.item, m.value); break;
+			case MANYMOUSE_EVENT_BUTTON:
 				if (m.value==1) mousePressed(m.device, m.item);
 				if (m.value==0) mouseReleased(m.device, m.item);
 				break;
 			case MANYMOUSE_EVENT_DISCONNECT: mouseDisconnected(m.device); break;
-            case MANYMOUSE_EVENT_ABSMOTION: break;
-            case MANYMOUSE_EVENT_MAX: break;
+      case MANYMOUSE_EVENT_ABSMOTION: mouseMovedAbsolute(m.device, m.item, m.value); break;
+      case MANYMOUSE_EVENT_MAX: break;
 		}
 	}
 }
